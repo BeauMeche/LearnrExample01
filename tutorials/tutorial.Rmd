@@ -20,6 +20,7 @@ options(tutorial.exercise.timelimit = 60,
         tutorial.storage = "local") 
 ```
 
+## Example #1
 
 ```{r reprex01}
 
