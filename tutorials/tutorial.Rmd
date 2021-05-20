@@ -20,22 +20,19 @@ options(tutorial.exercise.timelimit = 60,
         tutorial.storage = "local") 
 ```
 
-## R Markdown
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+```{r reprex01}
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+file <- paste0(system.file("images/", 
+                           package = "primer.tutorials"),
+               
+               # the paste was not working correctly - hacking the '/' into the 
+               # last bit allows the code to output the correct path
+               
+               "/excel_2.png")
 
-```{r cars}
-summary(cars)
+img <- readPNG(file)
+grid.raster(img)
+
 ```
 
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
