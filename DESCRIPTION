@@ -1,0 +1,11 @@
+Package: LearnrExample01
+Type: Package
+Title: Error Example
+Version: 0.1.0
+Author: Beau Meche
+Maintainer: The package maintainer <yourself@somewhere.net>
+Description: Mimimum Reproducable Example for 'learnr' discrepancy when 
+    rendering tutorials on Windows OS
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
